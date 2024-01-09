@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+  cursor: default;
+}
+
+#main-container p {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-family: poppins;
+  word-wrap: break-word;
+}
+
+#mask {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    transparent 0px,
+    rgba(0, 0, 0, 0.99) 20%
+  );
+  z-index: 999;
+}
+
+#credit {
+  position: absolute;
+  color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  z-index: 99;
+  font-family: poppins;
+  letter-spacing: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+}
